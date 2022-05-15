@@ -1,0 +1,22 @@
+{
+    "success" : {
+        "response_code" : "00",
+        "response_status" : "SUCCESS",
+        "response_message" : "Success." 
+    },
+    "missing params" : {
+        "response_code" : "10",
+        "response_status" : "FAIL",
+        "response_message" : "Missing parameters." 
+    },
+    "invalid input format" : {
+        "response_code" : "11",
+        "response_status" : "FAIL",
+        "response_message" : "Invalid input parameters." 
+    },
+    "sys error" : {
+        "response_code" : "99",
+        "response_status" : "FAIL",
+        "response_message" : "System error." 
+    }        
+}
