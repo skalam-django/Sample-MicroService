@@ -62,7 +62,7 @@ def configure_logging(application):
         '%(levelname)s in %(module)s: %(message)s'
     )
 
-    file_handler = RotatingFileHandler('flaskapp.log', maxBytes=16384, backupCount=20)
+    file_handler = RotatingFileHandler('flaskapp.log', maxBytes=16384, backupCount=1)
     file_handler.setFormatter(formatter)
 
     application.logger.removeHandler(default_handler)
