@@ -14,13 +14,17 @@ Sk Khurshid Alam
 
 ## Setup everything needed to run the server
 
-
-Build Docker Image:
+**Build the Docker Image**
 ```
-sudo docker build -t sample_microservice .
+sudo docker build --no-cache -t sample_microservice .
 ```
 
-Run Application using Docker Compose:
+**To Perform Unit Test**
+```
+sudo docker-compose run --rm --entrypoint "python -m unittest discover -p test.py" web
+```
+
+**Run Application using Docker Compose**
 ```
 sudo docker-compose up
 ```
